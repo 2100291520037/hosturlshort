@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          background-color: #f9f9f9;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+
+        .welcome-container {
+          text-align: center;
+          background: white;
+          padding: 2rem;
+          border-radius: 12px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+          color: #333;
+          font-size: 2.5rem;
+        }
+
+        p {
+          color: #666;
+          font-size: 1.2rem;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 0.7rem 1.5rem;
+          color: white;
+          background-color: #007bff;
+          border: none;
+          border-radius: 5px;
+          text-decoration: none;
+          font-size: 1rem;
+          margin-top: 1rem;
+        }
+
+        .btn:hover {
+          background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<div class="welcome-container">
+    <h1 th:text="'Welcome to Our Spring Application!'"></h1>
+    <p th:text="'This is a dynamic welcome page using Thymeleaf.'"></p>
+    <a href="/home" class="btn">Get Started</a>
+</div>
+</body>
+</html>
+```
